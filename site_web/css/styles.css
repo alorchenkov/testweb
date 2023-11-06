@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Font types */
+
+.abc-title {
+    font-family: Calibri, sans-serif;
+}
+
+.abc-txt {
+    font-family: Arial, sans-serif;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.middle {
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Internal div for the */
+.main-topic {
+    margin: 5% auto;
+    clear: both;
+    display: flex;
+}
+
+.left-text {
+    vertical-align: middle;
+    text-align: justify;
+
+}
+
+.right-picture > img {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Logo image resize */
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-top: 15%;
+}
+
+/* This will style any <img> element in .logo div */
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Back to the top image */
+.top-arrow img {
+    width: 22px;
+    height: auto;
+}
+
+/* Navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 198, 35);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(255, 242, 204);
+    color: black;
+}
+
+/* Left menu */
+.left-menu {
+    margin-left: auto;
+    text-align: right;
+    margin-top: 5%
+}
